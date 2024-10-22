@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.29)
-project(core)
+project(Hello VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_library(core STATIC lib_hello.cpp
-        lib_hello.cpp)
+add_executable(hello hello.cpp)
